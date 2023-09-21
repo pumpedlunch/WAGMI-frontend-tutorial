@@ -2,20 +2,24 @@ import { defineConfig } from '@wagmi/cli'
 import { react } from '@wagmi/cli/plugins'
 import * as chains from 'wagmi/chains'
 
-import { wagmiMintExampleAbi } from './abis/wagmiMintExample'
+import { erc20ABI } from 'wagmi'
+import { insuranceV2Abi } from './abis/insuranceV2ABI'
 
 export default defineConfig(() => {
   return {
     out: 'src/generated.ts',
     contracts: [
       {
-        abi: wagmiMintExampleAbi,
-        name: 'WagmiMintExample',
+        abi: insuranceV2Abi,
+        name: 'InsuranceV2',
         address: {
-          [chains.mainnet.id]: '0xfba3912ca04dd458c843e2ee08967fc04f3579c2',
-          [chains.goerli.id]: '0xfba3912ca04dd458c843e2ee08967fc04f3579c2',
+          [chains.goerli.id]: '0x3ca77D262736eB3345bF9Ea4b8E0783Aa8a355f5',
         },
       },
+      {
+        abi: erc20ABI,
+        name: 'erc20'
+      }
     ],
     plugins: [react()],
   }
