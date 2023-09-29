@@ -1,7 +1,7 @@
 Tutorial repo on using WAGMI to create an UMA Insurance Dapp Frontend.
 
 See video tutorial here:
-The smart contract abi was created in this repo:
+The smart contract abi was created in this repo: https://github.com/pumpedlunch/uma-insurance-example/blob/master/README.md
 
 Below is the original create-wagmi README:
 
