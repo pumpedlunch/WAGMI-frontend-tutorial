@@ -8,10 +8,8 @@ import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [mainnet, goerli],
-  [
-    alchemyProvider({ apiKey: `${import.meta.env.VITE_ALCHEMY_API_KEY}` }), publicProvider(),
-  ],
+  [goerli, mainnet],
+  [alchemyProvider({ apiKey: `${import.meta.env.VITE_ALCHEMY_API_KEY}`}), publicProvider()],
 )
 
 export const config = createConfig({

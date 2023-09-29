@@ -1,8 +1,7 @@
 import { useAccount } from 'wagmi'
-
+import { Policies } from './components/Policies'
 import { Account } from './components/Account'
 import { Connect } from './components/Connect'
-import { MintNFT } from './components/MintNFT'
 import { NetworkSwitcher } from './components/NetworkSwitcher'
 
 export function App() {
@@ -10,19 +9,19 @@ export function App() {
 
   return (
     <>
-      <h1>wagmi + Next.js + @wagmi/cli (Etherscan)</h1>
+      <h1>WAGMI UMA Insurance Frontend</h1>
 
       <Connect />
 
       {isConnected && (
         <>
+          <h3>Account</h3>
           <Account />
-          <hr />
-          <MintNFT />
-          <hr />
+          <h3>NetworkSwitcher</h3>
           <NetworkSwitcher />
         </>
       )}
+      <Policies/>
     </>
   )
 }

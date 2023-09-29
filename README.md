@@ -1,3 +1,10 @@
+Tutorial repo on using WAGMI to create an UMA Insurance Dapp Frontend.
+
+See video tutorial here:
+The smart contract abi was created in this repo:
+
+Below is the original create-wagmi README:
+
 This is a [wagmi](https://wagmi.sh) + [Vite](https://vitejs.dev/) + [@wagmi/cli](https://wagmi.sh/cli) project bootstrapped with [`create-wagmi`](https://github.com/wagmi-dev/wagmi/tree/main/packages/create-wagmi)
 
 This template demonstrates usage of the [`@wagmi/cli` ERC Plugin](https://wagmi.sh/cli/plugins/erc).
